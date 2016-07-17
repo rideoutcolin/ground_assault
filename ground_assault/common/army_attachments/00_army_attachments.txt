@@ -1,0 +1,340 @@
+# Possible Values:
+# cost, resource table.
+# potential, trigger, scope is army type.
+# allow, trigger, scope is army type.
+# modifier, modifier. applies to army and army ship.
+# ai_weight, default = 100
+
+@cost_verylow = 50
+@cost_low = 100
+@cost_medium = 150
+@cost_high = 200
+@cost_veryhigh = 250 
+
+@upkeep_verylow = 0.05
+@upkeep_low = 0.1
+@upkeep_medium = 0.15
+@upkeep_high = 0.2
+@upkeep_veryhigh = 0.25
+
+@verylow_mod = 0.05
+@low_mod = 0.1
+@medium_mod = 0.15
+@high_mod = 0.2
+@veryhigh_mod = 0.25
+
+# Defensive Artillery
+defensive_artillery = {
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	cost = { minerals = @cost_medium }
+	
+	modifier = {
+		army_defense_damage_mult = @high_mod
+		army_attack_damage_mult = @low_mod
+		army_morale_damage_mult = @low_mod
+		army_upkeep_mult = @upkeep_low
+	}
+}
+
+# Drone Detachments
+hunter_killer_drone_swarms = {
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	cost = { minerals = @cost_medium }
+	
+	modifier = {
+		army_damage_mult = @verylow_mod
+		army_morale_damage_mult = @verylow_mod
+		army_upkeep_mult = @upkeep_low
+	}
+}
+
+# Heavy Tanks
+hover_tank_battle_group = {
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	cost = { minerals = @cost_high }
+	
+	modifier = {
+		army_health = @verylow_mod
+		army_attack_damage_mult = @high_mod
+		army_defense_damage_mult = @verylow_mod
+		army_morale_damage_mult = @medium_mod
+		army_upkeep_mult = @upkeep_high
+	}
+}
+
+# Battlesuits
+battlesuits = {
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	cost = { minerals = @cost_medium }
+	
+	modifier = {
+		army_health = @low_mod
+		army_damage_mult = @verylow_mod
+		army_morale = @verylow_mod
+		army_upkeep_mult = @upkeep_medium
+	}
+	
+	prerequisites = { "tech_powered_exoskeletons" }
+
+	ai_weight = {
+		weight = 300
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_powered_exoskeletons
+			}
+		}
+	}
+}
+
+# Powered Armor
+power_armor = {
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	cost = { minerals = @cost_veryhigh }
+	
+	modifier = {
+		army_health = @veryhigh_mod
+		army_damage_mult = @low_mod
+		army_morale = @low_mod
+		army_upkeep_mult = @upkeep_high
+	}
+	
+	prerequisites = { "tech_combat_exoskeletons" }
+
+	ai_weight = {
+		weight = 300
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_combat_exoskeletons
+			}
+		}
+	}
+}
+
+# Clone Reinforcements
+clone_reinforcements = {
+	icon = "gfx/interface/icons/army_attachments/attachment_genetic.dds"
+	cost = { minerals = @cost_low }
+	
+	modifier = {
+		army_health = @high_mod
+		army_upkeep_mult = @upkeep_verylow
+	}
+	
+	prerequisites = { "tech_gene_banks" }
+	
+	ai_weight = {
+		weight = 300
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_gene_banks
+			}
+		}
+	}
+}
+
+# PSI Warriors
+psi_warriors = {
+	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
+	cost = { minerals = @cost_high }
+	
+	modifier = {
+		army_morale = @medium_mod
+		army_morale_damage_mult = @medium_mod
+		army_upkeep_mult = @upkeep_medium
+	}
+	
+	prerequisites = { "tech_psionic_theory" }
+	
+	ai_weight = {
+		weight = 300
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_psionic_theory
+			}
+		}
+	}
+}
+
+# Commissar Squads
+commissar_squads = {
+	icon = "gfx/interface/icons/army_attachments/attachment_slaves.dds"
+	cost = { minerals = @cost_low }
+	
+	modifier = {
+		army_morale = @veryhigh_mod
+		army_upkeep_mult = @upkeep_low
+	}
+	
+	prerequisites = { "tech_will_to_power" }
+	
+	ai_weight = {
+		weight = 300
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_will_to_power
+			}
+		}
+	}
+}
+
+# Utility Xenos
+xeno_cavalry = {
+	icon = "gfx/interface/icons/army_attachments/attachment_xeno.dds"
+	cost = { minerals = @cost_medium }
+	
+	modifier = {
+		army_damage_mult = @low_mod
+		army_health = @medium_mod
+		army_morale = @verylow_mod
+		army_upkeep_mult = @upkeep_high
+	}
+	
+	prerequisites = { "tech_gene_expressions" }
+	
+	ai_weight = {
+		weight = 300
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_gene_expressions
+			}
+		}
+	}
+}
+
+# Strike Craft
+strike_craft = {
+	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
+	cost = { minerals = @cost_high }
+	
+	modifier = {
+		army_damage_mult = @veryhigh_mod
+		army_morale = @low_mod
+		army_upkeep_mult = @upkeep_veryhigh
+	}
+	
+	prerequisites = { "tech_strike_craft_1" }
+	
+	ai_weight = {
+		weight = 300
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_strike_craft_1
+			}
+		}
+	}
+}
+
+# Mobile Shield Generators
+mobile_shield_generators = {
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	cost = { minerals = @cost_high }
+	
+	modifier = {
+		army_health = @high_mod
+		army_morale = @medium_mod
+		army_upkeep_mult = @upkeep_medium
+	}
+	
+	prerequisites = { "tech_shields_3" }
+	
+	ai_weight = {
+		weight = 300
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_shields_3
+			}
+		}
+	}
+}
+
+# Personal Shields
+personal_shields = {
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	cost = { minerals = @cost_veryhigh }
+	
+	modifier = {
+		army_health = @veryhigh_mod
+		army_morale = @high_mod
+		army_upkeep_mult = @upkeep_medium
+	}
+	
+	prerequisites = { "tech_shields_5" }
+	
+	ai_weight = {
+		weight = 300
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_shields_5
+			}
+		}
+	}
+}
+
+# Chemical Stimulants
+chemical_stimulants = {
+	icon = "gfx/interface/icons/army_attachments/attachment_genetic.dds"
+	cost = { minerals = @cost_medium }
+	
+	modifier = {
+		army_damage_mult = @verylow_mod
+		army_morale = @low_mod
+		army_upkeep_mult = @upkeep_medium
+	}
+}
+
+# Clone Suicide Brigade
+clone_suicide_brigade = {
+	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
+	cost = { minerals = @cost_low }
+	
+	modifier = {
+		army_damage_mult = @verylow_mod
+		army_morale_damage_mult = @medium_mod
+		army_upkeep_mult = @upkeep_low
+	}
+	
+	prerequisites = { "tech_gene_banks" }
+	
+	ai_weight = {
+		weight = 200
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_gene_banks
+			}
+		}
+	}
+}
+
+# Cybernetic Replacements
+cybernetic_replacements = {
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	cost = { minerals = @cost_verylow }
+	
+	modifier = {
+		army_health = @verylow_mod
+		army_morale = @medium_mod
+		army_upkeep_mult = @upkeep_medium
+	}
+	
+	prerequisites = { "tech_robotic_workers" }
+	
+	ai_weight = {
+		weight = 200
+		modifier = {
+			weight = 0
+			NOT = {
+				has_technology = tech_robotic_workers
+			}
+		}
+	}
+}

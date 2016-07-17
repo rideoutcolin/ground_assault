@@ -1,0 +1,13 @@
+defines:
+reduced base planet fortification value from 1000 to 500
+reduced max fortification damage reduction from 90% to 80% (divide by 5 versus 10)
+min army base damage changed from 0.01 to 1.0
+max army base damage changed from 10.0 to 2.0
+AI transport fleet size changed from 25 to 18
+reinforcing an army now increases maintenance cost by 150%
+fortifications repair at a rate of 1/day
+
+events:
+changed light orbital bombardment to give 1% monthly chance to kill a pop per month
+changed limited orbital bombardment to give 15% chance to kill a pop, 25% chance to ruin a building per month
+changed full orbital bombardment to give 35% chance to kill a pop, 50% chance to ruin a building, and 25% chance to create a tile blocker per month

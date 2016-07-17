@@ -1,0 +1,112 @@
+﻿l_english:
+ ####################################
+ # Prepare for Ground Assault!
+ ####################################
+
+ policy_orbital_bombardment:0 "Orbital Bombardment"
+ policy_orbital_bombardment_desc:1 "Orbital Bombardment allows laying siege to a world without the need for planetside troops.\n"
+ orbital_bombardment_light:0 "Precision"
+ allow_orbital_bombardment_light_name:0 "Precision Orbital Bombardment"
+ orbital_bombardment_light_desc:0 "Allows only the bombardment of identified military targets, while keeping civilian casualties to a minimum.\n\n§EOrbital Bombardment capped at 'Light'§!"
+ orbital_bombardment_limited:0 "Indiscriminate"
+ allow_orbital_bombardment_limited_name:0 "Indiscriminate Orbital Bombardment"
+ orbital_bombardment_limited_desc:0 "Allows orbital weapons to engage most surface targets during military operations, resulting in heavy collateral damage but quick reduction in a planet's defenses.\n\n§EOrbital Bombardment capped at 'Limited'§!"
+ orbital_bombardment_full:0 "Concentrated"
+ allow_orbital_bombardment_full_name:0 "Concentrated Orbital Bombardment"
+ orbital_bombardment_full_desc:0 "Allows the full use of all orbital weaponry, directed against all available targets on the surface of the planet for maximum destruction.\n\n§EOrbital Bombardment capped at 'Full'§!"
+
+ GROUND_SUPPORT_STANCE_SOFT:0 "Precision Fire Only"
+ GROUND_SUPPORT_STANCE_LIMITED:0 "Indiscriminate Targeting"
+ GROUND_SUPPORT_STANCE_FULL:0 "Concentrated Destruction"
+ GROUND_SUPPORT_HEADER:0 "$SUPPORT$ Ground Support"
+ GROUND_SUPPORT_STANCE_DESC:0 "§HGround Support§!\nThe ground support stance is §H'$STANCE$'§!."
+ GROUND_SUPPORT_STANCE_SOFT_DESC:2 "§H'Precision'§! stance will cause $DAMAGE|Y$ damage to the planet's fortifications each day. Defending armies will not regenerate health, and there is a small chance each month that a Pop dies."
+ GROUND_SUPPORT_STANCE_LIMITED_DESC:1 "§H'Indiscriminate'§! stance will cause $DAMAGE|Y$ damage to the planet's fortifications each day. Defending armies will not regenerate health. Pops are locked to unemployment and Pop Growth is halted."
+ GROUND_SUPPORT_STANCE_FULL_DESC:2 "§H'Concentrated'§! stance will cause $DAMAGE|Y$ damage to the planet's fortifications each day. Defending armies will not regenerate health. Pops are locked to unemployment and Pop Growth is halted."
+ GROUND_SUPPORT_STANCE_SOFT_BASE_DESC:2 "§H'Precision'§! stance will cause $DAMAGE|Y$ damage to the planet's fortifications each day, multiplied by the supporting fleet's size.\n\n§HIt also has the following effects:§!\n- Defending armies will not regenerate health\n- §Y1%§! chance each month that a Pop is killed\n"
+ GROUND_SUPPORT_STANCE_LIMITED_BASE_DESC:2 "§H'Indiscriminate'§! stance will cause $DAMAGE|Y$ damage to the planet's fortifications each day, multiplied by the supporting fleet's size.\n\n§HIt also has the following effects:§!\n- Defending armies will not regenerate health\n- Pops are unable to work\n- §Y15%§! chance each month that a Pop is killed\n- §Y25%§! chance each month that a building is ruined\n"
+ GROUND_SUPPORT_STANCE_FULL_BASE_DESC:2 "§H'Concentrated'§! stance will cause $DAMAGE|Y$ damage to the planet's fortifications each day, multiplied by the supporting fleet's size.\n\n§HIt also has the following effects:§!\n- Defending armies will not regenerate health\n- Pops are unable to work\n- §Y50%§! chance each month that a Pop is killed\n- §Y75%§! chance each month that a building is ruined\n- §Y25%§! chance each month that a tile blocker is created\n"
+ GROUND_SUPPORT_CLICK_TO_SWITCH:0 "§GClick to set the Ground Support on owned orbiting ships§!"
+ GROUND_SUPPORT_STANCE_POLICY_DESC:0 "§EThe maximum ground support stance allowed is decided by your Empire's policy on Orbital Bombardment§!"
+ GROUND_SUPPORT_NO_VALID_IN_ORBIT:0 "§RNo owned orbiting ships support Ground Support§!" 
+ 
+ 
+ assault_army:0 "Expeditionary Army"
+ assault_army_plural:0 "Expeditionary Armies"
+ assault_army_desc:0 "Expeditionary armies come with their own transports and can invade other planets."
+ defense_army:0 "Planetary Regulars"
+ defense_army_plural:0 "Planetary Regulars"
+ defense_army_desc:0 "Defense armies are powerful, but cannot be transported from the planet."
+ 
+ conscript_army:0 "Conscript Army"
+ conscript_army_plural:0 "Conscript Armies"
+ conscript_army_desc:0 "§LConscipt armies are cheap and quick to recruit, but lack the morale and training of more disciplined troops.§!"
+ shock_army:0 "Shock Army"
+ shock_army_plural:0 "Shock Armies"
+ shock_army_desc:0 "§LShock armies are well trained and aggressive troops, excellent for invading enemy planets.§!"
+ planetary_guard:0 "Planetary Guard"
+ planetary_guard_plural:0 "Planetary Guard"
+ planetary_guard_desc:0 "§LPlanetary Guards are often the drawn from the best recruits society has to offer, and defend their worlds fiercely.§!"
+ planetary_reservists:0 "Planetary Reservists"
+ planetary_reservists_plural:0 "Planetary Reservists"
+ planetary_reservists_desc:0 "§LPlanetary Reservists are part-time volunteers. Without the dedicated training of regular troops, they are good for little more than rear area security and garrison duty.§!"
+ elite_clone_army:0 "Elite Clone Army"
+ elite_clone_army_plural:0 "Elite Clone Armies"
+ elite_clone_army_desc:0 "§LThese clones are grown more slowly than their inferior counterparts, and receive extensive training. Even their officers are clones, and as a result these units have exceptional morale and discipline.§!"
+ 
+ army_attachment_battlesuits:0 "Battlesuits"
+ army_attachment_battlesuits_desc:0 "§LReinforced exoskeletons that provide significant protection from small arms fire and shrapnel while allowing infantry to move faster and carry heavier loads.§!"
+ army_attachment_power_armor:0 "Power Armor"
+ army_attachment_power_armor_desc:0 "§LSuits of powered armor that augment the natural abilities of soldiers, increasing both their strength and endurance. The armor allows them to carry heavier ordnance, while also offering better protection against radiation as well as chemical and biological agents.§!"
+ 
+ army_attachment_defensive_artillery:0 "Defensive Artillery"
+ army_attachment_defensive_artillery_desc:0 "§LA large collection of weapon systems designed to track and engage fast-moving objects as they enter a planet's atmosphere.§!"
+ army_attachment_clone_suicide_brigade:0 "Clone Suicide Brigade"
+ army_attachment_clone_suicide_brigade_desc:0 "§LClones bred with a single overriding purpose in mind - to seek out concentrations of enemy forces, dive into their midst and detonate the explosives strapped onto their bodies. These random acts of terror often cause considerable damage to enemy morale.§!"
+ army_attachment_clone_reinforcements:0 "Clone Reinforcements"
+ army_attachment_clone_reinforcements_desc:0 "§L Cheap replacement soldiers grown in vats and used to replace battlefield casualties.§!"
+ 
+ army_attachment_mobile_shield_generators:0 "Mobile Shield Generators"
+ army_attachment_mobile_shield_generators_desc:0 "§LGenerators carried on large tracked vehicles which generate a protective force field over a portion of the battlefield. When functional they provide excellent defense against artillery and orbital bombardment.§!"
+ army_attachment_personal_shields:0 "Personal Shield Units"
+ army_attachment_personal_shields_desc:0 "§LShield generators small enough to be carried on the back of a single individual. Their force fields can be overwhelmed with sustained fire, but this is still enough to significantly increase the lifespan of soldiers on the battlefield.§!"
+ 
+ army_attachment_strike_craft:0 "Atmospheric Strike Craft"
+ army_attachment_strike_craft_desc:0 "§LStrike craft designed to operate in planetary atmospheres, carrying out a variety of ground support and close attack missions.§!"
+
+ army_attachment_military_police_corps:0 "Military Police Corps"
+ army_attachment_military_police_corps_desc:0 "§LA large detachment of military police. They are of limited use on the front-lines, but their presence can improve unit discipline.§!"
+ army_attachment_battle_strider_column:0 "Battle Strider Column"
+ army_attachment_battle_strider_column_desc:0 "§LBipedal armored fighting vehicles that are capable of operating in virtually any type of terrain. Their agile and flexible nature give them a distinct advantage on the battlefield, though they are vulnerable to attacks directed at their legs.§!"
+ 
+ army_attachment_hover_tank_battle_group:0 "Hover Tank Battle Group"
+ army_attachment_hover_tank_battle_group_desc:0 "§LPowerful yet fast-moving armor that uses repulsor lifts to hover slightly above the ground. Although this limits their weight somewhat, their speed and agility make up for it when compared to conventional tracked vehicles.§!"
+ army_attachment_assault_landers:0 "Assault Landers"
+ army_attachment_assault_landers_desc:1 "§LThese massive dropships are used to transport armies and their heavy equipment to a planet's surface under battle conditions and without the benefit of docking facilities.§!"
+ army_attachment_orbital_drop_pods:0 "Orbital Drop Pods"
+ army_attachment_orbital_drop_pods_desc:0 "§LSingle use drop pods that are launched onto a planet's surface from a ship in orbit. While heavier equipment still needs to be brought in with assault landers, these pods significantly decrease the time spent between orbit and planetfall during planetary invasions.§!"
+ 
+ army_attachment_neo_concrete_fortifications:0 "Neo-Concrete Fortifications"
+ army_attachment_neo_concrete_fortifications_desc:0 "§LExtensive layers of neo-concrete ground fortifications and bunker networks that offer increased protection against orbital bombardment. This restricts the mobility of the army, but can be a deciding factor in defensive actions.§!"
+ 
+ army_attachment_self_replicating_mine_fields:0 "Self-Replicating Mine Fields"
+ army_attachment_self_replicating_mine_fields_desc:0 "§LBurrowing and semi-mobile mines that continually replicate copies of themselves to maintain their numbers. Clearing these self-replicating mine fields can be exceptionally difficult, especially during combat.§!"
+ 
+ army_attachment_air_defense_artillery:0 "Air Defense Artillery"
+ army_attachment_air_defense_artillery_desc:0 "§LA large collection of weapon systems designed to track and engage fast-moving objects as they enter a planet's atmosphere.§!"
+ 
+ army_attachment_chemical_stimulants:0 "Chemical Stimulants"
+ army_attachment_chemical_stimulants_desc:0 "§LPotent cocktail of chemicals designed to increase the combat awareness and reflexes of a soldier. Field performance increases temporarily, but continued use may result in anxiety, depression, seizures, nausea, hallucinations, narcolepsy and uncontrollable bowel movement.§!"
+ 
+ army_attachment_xeno_cavalry:0 "Xeno Cavalry"
+ army_attachment_xeno_cavalry_desc:0 "§LThese sturdy war beasts make excellent mounts, once they have finished bonding with their riders. They can traverse almost any terrain, and have proven very effective in scouting and raiding roles. Larger specimens have also been used with success as heavy weapon platforms.§!"
+ army_attachment_psi_warriors:0 "PSI Warriors"
+ army_attachment_psi_warriors_desc:0 "§LThese elite warriors are shrouded in mystery, relying on their powerful psionic abilities and extensive physical training to move about the battlefield. They prefer to engage their opponents in close combat, and many are extremely proficient with melee weapons.§!"
+ army_attachment_gene_warrior_shock_troops:0 "Gene Warrior Shock Troops"
+ army_attachment_gene_warrior_shock_troops_desc:0 "§LFormidable warriors that tower over regular soldiers, they are best used as shock troops or mobile strike forces where the fighting is thickest. A company of these fighters can sometimes be enough to turn an entire battle around.§!"
+ 
+ army_attachment_hunter_killer_drone_swarms:0 "Hunter-Killer Drone Swarms"
+ army_attachment_hunter_killer_drone_swarms_desc:0 "§LMassive swarms of these relatively simple unmanned aerial vehicles are unleashed on enemy positions in the hope of overwhelming them. Although a single drone may not be a significant threat to a trained soldier, several dozen are.§!"
+ army_attachment_cybernetic_replacements:0 "Cybernetic Replacements"
+ army_attachment_cybernetic_replacements_desc:0 "§LOrgans and limbs damaged or lost in battle are replaced with advanced cybernetic implants, allowing crippled warriors to remain in service even after suffering grievous injuries.§!"
+
