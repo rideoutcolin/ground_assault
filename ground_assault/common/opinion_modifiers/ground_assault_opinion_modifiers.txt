@@ -3,7 +3,7 @@ opinion_ground_attack_policy_orbital_bombardment = {
 	opinion = {
 		base = 0
 		modifier = {
-			add = -15
+			add = -5
 			has_ethic = "ethic_pacifist"
 
 			FROM = {
@@ -12,7 +12,7 @@ opinion_ground_attack_policy_orbital_bombardment = {
 		}
 
 		modifier = {
-			add = -30
+			add = -20
 
 			has_ethic = "ethic_fanatic_pacifist"
 
@@ -22,7 +22,7 @@ opinion_ground_attack_policy_orbital_bombardment = {
 		}
 
 		modifier = {
-			add = -50
+			add = -35
 			has_ethic = "ethic_pacifist"
 
 			FROM = {
@@ -31,7 +31,7 @@ opinion_ground_attack_policy_orbital_bombardment = {
 		}
 
 		modifier = {
-			add = -100
+			add = -50
 
 			has_ethic = "ethic_fanatic_pacifist"
 

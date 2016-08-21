@@ -1,0 +1,5 @@
+skill_general = {
+	army_morale = 0.1
+	army_damage_mult = 0.1
+	army_upkeep_mult = -0.05
+}
