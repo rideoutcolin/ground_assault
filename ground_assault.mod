@@ -8,4 +8,4 @@ tags={
 }
 picture="ground_assault.jpg"
 remote_file_id="684888161"
-supported_version="1.2.5"
+supported_version="1.2.*"
